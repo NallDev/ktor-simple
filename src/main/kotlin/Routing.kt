@@ -1,5 +1,6 @@
 package com.nalldev
 
+import com.nalldev.database.DatabaseManager
 import com.nalldev.services.IUserService
 import com.nalldev.services.User
 import io.ktor.http.*
@@ -11,6 +12,7 @@ import org.koin.ktor.ext.inject
 
 fun Application.configureRouting() {
     val userService by inject<IUserService>()
+    val database = DatabaseManager()
     routing {
         get("/users") {
             call.respond(userService.getAllUser())
