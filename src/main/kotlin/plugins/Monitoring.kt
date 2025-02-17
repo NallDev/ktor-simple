@@ -1,4 +1,4 @@
-package com.nalldev
+package com.nalldev.plugins
 
 import io.ktor.server.application.*
 import io.ktor.server.plugins.calllogging.*
