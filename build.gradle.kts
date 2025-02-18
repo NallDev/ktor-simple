@@ -32,6 +32,7 @@ dependencies {
     implementation("io.ktor:ktor-server-call-logging")
     implementation("io.ktor:ktor-server-swagger")
     implementation("io.ktor:ktor-server-netty")
+    implementation("io.ktor:ktor-server-resources")
     implementation("ch.qos.logback:logback-classic:$logback_version")
     implementation("io.ktor:ktor-server-config-yaml")
 
