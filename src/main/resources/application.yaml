@@ -5,3 +5,9 @@ ktor:
     deployment:
         port: 8080
     development: true
+
+jwt:
+    secret: "secret"
+    issuer: "http://localhost:3306/"
+    audience: "http://localhost:3306/test"
+    realm: "You are not authenticated"

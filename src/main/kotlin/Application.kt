@@ -4,6 +4,7 @@ import com.nalldev.di.appModule
 import com.nalldev.plugins.configureHTTP
 import com.nalldev.plugins.configureMonitoring
 import com.nalldev.plugins.configureSerialization
+import com.nalldev.plugins.security
 import com.nalldev.routes.configureRouting
 import io.ktor.server.application.*
 import org.koin.ktor.plugin.Koin
@@ -21,5 +22,6 @@ fun Application.module() {
     configureSerialization()
     configureMonitoring()
     configureHTTP()
+    security()
     configureRouting()
 }
